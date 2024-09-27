@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.example.newsApiTest.NewsApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.142 s <<< FAILURE! - in org.example.newsApiTest.NewsApiTest
+GetBooksDetails(org.example.newsApiTest.NewsApiTest)  Time elapsed: 5.686 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "code" (class org.example.dto.NewsApiResponse), not marked as ignorable (3 known properties: "status", "articles", "totalResults"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 27] (through reference chain: org.example.dto.NewsApiResponse["code"])
+	at org.example.newsApiTest.NewsApiTest.GetBooksDetails(NewsApiTest.java:36)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "code" (class org.example.dto.NewsApiResponse), not marked as ignorable (3 known properties: "status", "articles", "totalResults"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 27] (through reference chain: org.example.dto.NewsApiResponse["code"])
+	at org.example.newsApiTest.NewsApiTest.GetBooksDetails(NewsApiTest.java:36)
+
